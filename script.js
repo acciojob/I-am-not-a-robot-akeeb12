@@ -1,17 +1,16 @@
 //your code here
 document.addEventListener('DOMContentLoaded', () =>{
 	const images = ['img1','img2','img3','img4','img5'];
-	let imageContainer = document.getElementById('image-contsiner');
+	let imageContainer = document.getElementById('image-container');
 	let resetBtn = document.getElementById('reset');
 	let verifyBtn = document.getElementById('verify');
 	let para = document.getElementById('para');
 	let selectedImages = [];
 	let clickedCount = 0;
-})
 
 function renderImages() {
 	imageContainer.innerHTML = '';
-	const randomIndex = Math.floor(Math.random() * Images.length);
+	const randomIndex = Math.floor(Math.random() * images.length);
 	const selectedImagesClass = images[randomIndex];
 
 for(let i = 0; i < 5; i ++){
@@ -49,7 +48,7 @@ function handleImageClick(event) {
 	resetBtn.style.display = 'block';
 
 	if(clickedCount === 2){
-		verifyBtn.stle.display = 'block';
+		verifyBtn.style.display = 'block';
 	}
 }
 
