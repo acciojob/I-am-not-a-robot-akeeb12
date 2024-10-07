@@ -21,7 +21,7 @@ for(let i = 0; i < 5; i ++){
 }
 
 const duplicateImage = document.createElement('img');
-duplicateImage.className = selecteddImageClass;
+duplicateImage.className = selectedImagesClass;
 duplicateImage.addEventListener('click', handleImageClick);
 imageContainer.appendChild(duplicateImage);
 
